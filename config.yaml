@@ -36,8 +36,8 @@ params:
     title: Links
     list:
       - icon: fab fa-linkedin-in
-        url: "#"
-        title: LinkedIn
+        url: "lrwang625@163.com"
+        title: email
       - icon: fab fa-stack-overflow
         url: "#"
         title: StackOverflow
@@ -74,7 +74,7 @@ params:
   aboutme:
     title: 关于自己
     icon: # fas fa-graduation-cap
-    description: 马欢，1994年，东北财经大学国际经济贸易学院副教授，经济学博士。研究方向为数字经济、人工智能、国际贸易理论与政策、跨国直接投资、劳动、创新等。
+    description: 马欢，1994年，东北财经大学国际经济贸易学院副教授，经济学博士。研究方向为数字经济、人工智能、国际贸易理论与政策、跨国直接投资、劳动、创新等。联系方式：lrwang625@163.com
 
 
 
