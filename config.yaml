@@ -1,0 +1,247 @@
+baseURL: https://lrw-hm.github.io
+# Uncomment below to use aafu as hugo theme. See instructions in README.md
+theme: aafu
+languageCode: en-us
+build:
+  writeStats: true
+params:
+  title: aafu theme
+  author: Darshan Baral
+  description: Website title
+  copyright: >-
+    powered by [hugo](https://gohugo.io/) & deployed on
+    [Cloudflare](https://www.cloudflare.com/)
+  theme:
+    mainTheme: dark
+    showAttribute: true
+    singlePage: false
+  favicons:
+    use: true
+    metas: |2-
+              <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+              <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+              <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+              <link rel="manifest" href="site.webmanifest">
+              <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+              <link rel="shortcut icon" href="favicon.ico">
+
+  profile:
+    name: 马欢
+    tagline: 东北财经大学 国际经济贸易学院 副教授 
+    location: "中国 大连"
+    photo: profile.jpg
+
+
+  social:
+    title: Links
+    list:
+      - icon: fab fa-linkedin-in
+        url: "#"
+        title: LinkedIn
+      - icon: fab fa-stack-overflow
+        url: "#"
+        title: StackOverflow
+      - icon: fab fa-github
+        url: "#"
+        title: GitHub
+      - icon: fab fa-twitter
+        url: "#"
+        title: Twitter
+      - icon: fab fa-orcid
+        url: "#"
+        title: Orcid
+      - icon: ai ai-google-scholar
+        url: "#"
+        title: Google Scholar
+      - icon: fab fa-researchgate
+        url: "#"
+        title: ResearchGate
+
+
+
+  showInAccordion:
+    - item: aboutme
+      expand: true
+    - item: experience
+    - item: education
+    - item: publication
+    - item: project
+    - item: skill
+    - item: hobby
+
+
+
+  aboutme:
+    title: 关于自己
+    icon: # fas fa-graduation-cap
+    description: 马欢，1994年，东北财经大学国际经济贸易学院副教授，经济学博士。研究方向为数字经济、人工智能、国际贸易理论与政策、跨国直接投资、劳动、创新等。
+
+
+
+  experience:
+    title: 工作经历
+    icon: # fas fa-graduation-cap
+    list:
+      - position:
+        dates:  2023.07-*至今*
+        company: 东北财经大学 国际经济贸易学院 副教授
+      - position:
+        dates:
+        company:
+
+
+
+  education:
+    title: 教育背景
+    icon: # fas fa-graduation-cap
+    list:
+      - degree: 博士 世界经济
+        college: 南开大学 天津市
+        dates: 2019.9-2023.3
+        thesis_title:
+        thesis_url:
+      - degree: 硕士 世界经济
+        college: 对外经济贸易大学 北京市
+        dates: 2017.9-2019.7
+        thesis_title: 
+        thesis_url:
+      - degree: 学士 材料科学与工程
+        college: 上海海事大学 上海市
+        dates: 2012.9-2016.7
+
+
+
+  publication:
+    title: 成果发表
+    icon: # fas fa-book
+    format:
+      - authors
+      - title
+      - journal
+      - date
+    types:
+      - 已发表论文
+      - 工作论文
+      - 专著
+    list:
+      - title: >-
+                  "全球生产智能化对中国贸易与福利的影响"
+        authors:  "马欢（第一作者），李磊，盛斌，徐刚"
+        date:     "2024年第9期"
+        journal:  "世界经济"
+        url:      "10.19985/j.cnki.cassjwe.2024.09.004"
+        type:     已发表论文
+
+      - title: >-
+                  "从“生产回岸”谈“稳外资”——基于发达国家机器人使用驱动的分析"
+        authors:  "李磊，马欢（通讯作者）"
+        date:     "2023年第10期"
+        journal:  "管理世界"
+        url:      "10.19744/j.cnki.11-1235/f.2023.0125"
+        type:     已发表论文
+
+      - title: >-
+                  "最低工资、机器人使用与企业退出"
+        authors:  "李磊，马欢（通讯作者），徐刚"
+        date:     "2023年第1期"
+        journal:  "世界经济"
+        url:      "10.19985/j.cnki.cassjwe.2023.01.014"
+        type:     已发表论文
+
+      - title: >-
+                  "电子政务、贸易成本与企业出口"
+        authors:  "李磊，马欢（通讯作者）"
+        date:     "2022年第11期"
+        journal:  "财经研究"
+        url:      "10.16538/j.cnki.jfe.20220216.203"
+        type:     已发表论文
+
+      - title: >-
+                  "“一带一路”倡议与高质量进口"
+        authors:  "李磊，马欢"
+        date:     "2022年第2期"
+        journal:  "南开学报(哲学社会科学版)"
+        url:      ""
+        type:     已发表论文
+
+      - title: >-
+                  "数字政府能否留住外资?"
+        authors:  "李磊，马欢"
+        date:     "2020年第4期"
+        journal:  "中山大学学报(社会科学版)"
+        url:      "10.13471/j.cnki.jsysusse.2020.04.020"
+        type:     已发表论文
+
+      - title: >-
+                  "外资机器人使用的溢出效应：基于技术示范视角"
+        authors:  "马欢，李磊"
+        date:     "2025"
+        journal:  "在投"
+        url:      ""
+        type:     工作论文
+
+      - title: >-
+                  "Global Production Automation and China’s Export Adjustment
+                  ——Theoretical and Empirical Evidence"
+        authors:  "Ma, H., Yang, G., and Zheng, Y"
+        date:     "2025"
+        journal:  "Woking Paper"
+        url:      ""
+        type:     工作论文
+
+      - title: >-
+                  "对外开放四十年：回顾与展望"
+        authors:  "对外经济贸易大学国际经济研究院课题组"
+        date:     "2018"
+        journal:  "人民日报出版社，参加编写"
+        url:      ""
+        type:     专著
+
+
+
+  project:
+    title: 科研项目
+    icon: # fas fa-project-diagram
+    list:
+      - title:  数字政府与应急管理
+        url:    ""
+        description: 中国科协调研宣传部高端科技创新智库青年项目，2020.6-2020.12，已结项，主持
+
+      - title:  全球产业智能化对我国供应链安全的影响及对策研究
+        url:    ""
+        description: 国家社会科学基金重大项目，2022.12-*至今*，在研，参与
+
+      - title: 
+        url: ""
+        description: 
+
+      - title: 
+        url: ""
+        description: 
+
+
+
+  skill:
+    title: 科研技能
+    panelId: skill-panel
+    icon: # fas fa-cogs
+    list:
+      - skill: "英语"
+        skillrating: 80
+      - skill: "Stata"
+        skillrating: 80
+      - skill: "MATLAB"
+        skillrating: 70
+      - skill: "Python"
+        skillrating: 60
+
+
+
+  hobby:
+    title: 承担教学
+    icon: # fas fa-gamepad
+    list:
+      - hobby: 国际发展学概论，本科生
+      - hobby: 国际贸易思想史，本科生
+      - hobby: 国际贸易：理论与政策，研究生
+      - hobby: AI在国际商务中的应用，研究生

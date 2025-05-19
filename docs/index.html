@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto  dark "><head>
+  <title>aafu theme</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Darshan Baral" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.146.5" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/main.min.7cfdadb8a75a635e40750943961d21e5e0f1826e359cace5f0278346ea1de4dc.css"
+    integrity="sha256-fP2tuKdaY15AdQlDlh0h5eDxgm41nKzl8CeDRuod5Nw="
+    crossorigin="anonymous"
+  />
+  
+
+  <link href="/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/general.css" />
+  <link rel="stylesheet" href="/css/search.css" />
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+
+    const setTheme = (theme) => {
+      html.classList.remove("light");
+      if (theme === "dark") {
+        html.classList.add("dark");
+        window.localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        window.localStorage.setItem("theme", "light");
+      }
+      fixThemeToggleIcon(theme);
+    };
+
+    const fixThemeToggleIcon = (theme) => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (themeToggle) {
+        if (theme === "dark") {
+          themeToggle.classList.remove("fa-moon");
+          themeToggle.classList.add("fa-sun");
+        } else {
+          themeToggle.classList.remove("fa-sun");
+          themeToggle.classList.add("fa-moon");
+        }
+      }
+    };
+
+    if (theme == null) {
+      if (html.classList.contains("dark")) {
+        theme = "dark";
+      } else if (html.classList.contains("light")) {
+        theme = "light";
+      } else {
+        
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        if (prefersDark) {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+      }
+    }
+
+    setTheme(theme);
+
+    const toggleTheme = () => {
+      html.classList.contains("dark") ? setTheme("light") : setTheme("dark");
+    };
+
+    window.onload = () => {
+      fixThemeToggleIcon(theme);
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 dark:border-gray-300 justify-between"
+>
+  <div>
+    <a class="nav-menu-item" href="https://lrw-hm.github.io/">Home</a>
+    <a class="nav-menu-item" href="/blog">Blog</a>
+  </div>
+  <div>
+    <a class="mr-4" href="/search">
+      <i class="fas fa-search"></i>
+    </a>
+    <i
+      class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+      onclick="toggleTheme()"
+    ></i>
+  </div>
+</header>
+
+
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker drop-shadow-md p-2 rounded-t-lg">
+      <div class="flex flex-col justify-center">
+        <div
+  class="w-full p-2 flex justify-center align-middle profile-photo-container"
+>
+  <img
+    class="rounded-sm"
+    src="/images/profile.jpg"
+    alt="Darshan Baral"
+  />
+</div>
+
+        <div class="px-2 text-center">
+          <h1 class="mb-0">马欢</h1>
+<h2 class="mb-0">东北财经大学 国际经济贸易学院 副教授</h2>
+<h3 class="mb-4">中国 大连</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-stack-overflow"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-twitter"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-orcid"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 ai ai-google-scholar"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-researchgate"></i>
+    </a>
+  </div>
+  
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+    <footer class="text-sm text-center border-t border-gray-500  bg-gray-200 dark:bg-dark rounded-b-lg py-2 ">
+  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a> &amp; deployed on <a href="https://www.cloudflare.com/">Cloudflare</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+
+  
+</footer>
+
+  </div>
+  <div class="col-span-3 relative">
+    
+    <div class="px-2">
+      <h2 class="accordion active">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class=""></i>
+          关于自己</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  马欢，1994年，东北财经大学国际经济贸易学院副教授，经济学博士。研究方向为数字经济、人工智能、国际贸易理论与政策、跨国直接投资、劳动、创新等。
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class=""></i>
+          工作经历</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4 style="text-decoration: underline;"></h4>
+<p >
+  2023.07-<em>至今</em> &middot;  东北财经大学 国际经济贸易学院 副教授 
+</p>
+
+
+
+<h4 style="text-decoration: underline;"></h4>
+<p >
+   &middot;   
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class=""></i>
+          教育背景</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">博士 世界经济</h4>
+<p >2019.9-2023.3 &middot; 南开大学 天津市</p>
+
+
+
+<h4 style="text-decoration: underline;">硕士 世界经济</h4>
+<p >2017.9-2019.7 &middot; 对外经济贸易大学 北京市</p>
+
+
+
+<h4 style="text-decoration: underline;">学士 材料科学与工程</h4>
+<p >2012.9-2016.7 &middot; 上海海事大学 上海市</p>
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class=""></i>
+          成果发表</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+
+<h4 style="text-decoration: underline;">已发表论文</h4><p class="foo indent-8">马欢（第一作者），李磊，盛斌，徐刚.
+
+
+<a href="10.19985/j.cnki.cassjwe.2024.09.004">
+  <em>&#34;全球生产智能化对中国贸易与福利的影响&#34;.</em>
+</a>
+
+
+世界经济.
+2024年第9期.
+</p>
+<p class="foo indent-8">李磊，马欢（通讯作者）.
+
+
+<a href="10.19744/j.cnki.11-1235/f.2023.0125">
+  <em>&#34;从“生产回岸”谈“稳外资”——基于发达国家机器人使用驱动的分析&#34;.</em>
+</a>
+
+
+管理世界.
+2023年第10期.
+</p>
+<p class="foo indent-8">李磊，马欢（通讯作者），徐刚.
+
+
+<a href="10.19985/j.cnki.cassjwe.2023.01.014">
+  <em>&#34;最低工资、机器人使用与企业退出&#34;.</em>
+</a>
+
+
+世界经济.
+2023年第1期.
+</p>
+<p class="foo indent-8">李磊，马欢（通讯作者）.
+
+
+<a href="10.16538/j.cnki.jfe.20220216.203">
+  <em>&#34;电子政务、贸易成本与企业出口&#34;.</em>
+</a>
+
+
+财经研究.
+2022年第11期.
+</p>
+<p class="foo indent-8">李磊，马欢.
+
+
+<em>&#34;“一带一路”倡议与高质量进口&#34;.</em>
+
+
+南开学报(哲学社会科学版).
+2022年第2期.
+</p>
+<p class="foo indent-8">李磊，马欢.
+
+
+<a href="10.13471/j.cnki.jsysusse.2020.04.020">
+  <em>&#34;数字政府能否留住外资?&#34;.</em>
+</a>
+
+
+中山大学学报(社会科学版).
+2020年第4期.
+</p>
+
+
+<h4 style="text-decoration: underline;">工作论文</h4><p class="foo indent-8">马欢，李磊.
+
+
+<em>&#34;外资机器人使用的溢出效应：基于技术示范视角&#34;.</em>
+
+
+在投.
+2025.
+</p>
+<p class="foo indent-8">Ma, H., Yang, G., and Zheng, Y.
+
+
+<em>&#34;Global Production Automation and China’s Export Adjustment ——Theoretical and Empirical Evidence&#34;.</em>
+
+
+Woking Paper.
+2025.
+</p>
+
+
+<h4 style="text-decoration: underline;">专著</h4><p class="foo indent-8">对外经济贸易大学国际经济研究院课题组.
+
+
+<em>&#34;对外开放四十年：回顾与展望&#34;.</em>
+
+
+人民日报出版社，参加编写.
+2018.
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class=""></i>
+          科研项目</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4>
+  <a href="">数字政府与应急管理</a>
+</h4>
+<p class="markdownify indent-8">中国科协调研宣传部高端科技创新智库青年项目，2020.6-2020.12，已结项，主持</p>
+
+<h4>
+  <a href="">全球产业智能化对我国供应链安全的影响及对策研究</a>
+</h4>
+<p class="markdownify indent-8">国家社会科学基金重大项目，2022.12-<em>至今</em>，在研，参与</p>
+
+<h4>
+  <a href=""></a>
+</h4>
+<p class="markdownify indent-8"></p>
+
+<h4>
+  <a href=""></a>
+</h4>
+<p class="markdownify indent-8"></p>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class=""></i>
+          科研技能</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        id="skill-panel"
+        
+      >
+        <div class=""><script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+<code>英语</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Stata</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>MATLAB</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="70% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Python</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="60% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class=""></i>
+          承担教学</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">国际发展学概论，本科生</li>
+  
+  <li class="list-unstyled mb-2">国际贸易思想史，本科生</li>
+  
+  <li class="list-unstyled mb-2">国际贸易：理论与政策，研究生</li>
+  
+  <li class="list-unstyled mb-2">AI在国际商务中的应用，研究生</li>
+  
+</ul>
+</div>
+      </div>
+    </div>
+    
+
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>
