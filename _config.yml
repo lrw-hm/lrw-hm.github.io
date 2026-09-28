@@ -23,7 +23,7 @@ repository               : "lrw-hm/lrw-mh.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "微信头像.jpg"
   name             : "Huan Ma (马欢)"
   pronouns         : # example: "she/her"  
   bio              : ""
