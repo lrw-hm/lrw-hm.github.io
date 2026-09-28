@@ -26,11 +26,11 @@ author:
   avatar           : "微信头像.jpg"
   name             : "Huan Ma (马欢)"
   pronouns         : # example: "she/her"  
-  bio              : ""
+  bio              : "Ph.D. in Economics"
   location         : "Dalian, China"
   employer         : # URL
   uri              : # URL
-  email            : "lrwang625@163.com"
+  email            : # URL
 
   # Academic websites
   academia         : # URL
@@ -51,7 +51,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/lrw-hm"
+  github           : # URL
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
