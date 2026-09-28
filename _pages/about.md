@@ -18,17 +18,17 @@ Email: lrwang625@163.com
 ---
 
 # Work & Education
-- 2023.07 - present  Dongbei University of Finance and Economics  Associate Professor
-- 2019.09 - 2023.03  Nankai University  Ph.D.
-- 2017.09 - 2019.07  University of International Business and Economics  M.A.
-- 2012.09 - 2016.07  Shanghai Maritime University  B.S.
+- 2023.07 - present,  Dongbei University of Finance and Economics,  Associate Professor
+- 2019.09 - 2023.03,  Nankai University,  Ph.D.
+- 2017.09 - 2019.07,  University of International Business and Economics,  M.A.
+- 2012.09 - 2016.07,  Shanghai Maritime University,  B.S.
 
 ---
 
-# Research
+# Publications
 1. **Ma H**(*first author*), Yang G, and Zheng Y. Global Production Automation and China's Export Adjustment: Theoretical and Empirical Evidence[J]. *The World Economy*, 2026, 49(4): 779-803.
    [PDF下载](/files/2026_1.pdf)
-2. **Ma H**(*first author*), Han Y. The Impact of Joint Patent R&D by Domestic and Foreign Investors on the Innovation Capability of Local Enterprises[J]. *Available at SSRN 6449363*.
+2. **Ma H**(*first author*), Han Y. The Impact of Joint Patent R&D by Domestic and Foreign Investors on the Innovation Capability of Local Enterprises[J]. *Available at SSRN 6449363*, 2026.
    [PDF下载](/files/2026_2.pdf)
 3. **马欢**,李磊,盛斌,徐刚. 全球生产智能化对中国贸易与福利的影响[J]. *世界经济*, 2024, 47(9):3-32.
    [PDF下载](/files/2024_1.pdf)
